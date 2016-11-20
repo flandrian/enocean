@@ -8,6 +8,7 @@ try:
 except ImportError:
     import Queue as queue
 from enocean.protocol.packet import Packet
+from enocean.protocol.esp2parser import Esp2Parser
 from enocean.protocol.constants import PACKET, PARSE_RESULT, RETURN_CODE
 
 
@@ -60,7 +61,7 @@ class Communicator(threading.Thread):
         ''' Parses messages and puts them to receive queue '''
         # Loop while we get new messages
         while True:
-            status, self._buffer, packet = Packet.parse_msg(self._buffer, communicator=self)
+            status, self._buffer, packet = Esp2Parser.parse_msg(self._buffer, communicator=self)
             # If message is incomplete -> break the loop
             if status == PARSE_RESULT.INCOMPLETE:
                 return status

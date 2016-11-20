@@ -13,7 +13,7 @@ class SerialCommunicator(Communicator):
     def __init__(self, port='/dev/ttyAMA0', callback=None):
         super(SerialCommunicator, self).__init__(callback)
         # Initialize serial port
-        self.__ser = serial.Serial(port, 57600, timeout=0.1)
+        self.__ser = serial.Serial(port, 9600, timeout=0.1)
 
     def run(self):
         self.logger.info('SerialCommunicator started')
