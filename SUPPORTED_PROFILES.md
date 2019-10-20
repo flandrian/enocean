@@ -566,4 +566,74 @@ All profiles (should) correspond to the official [EEP](http://www.enocean-allian
 |CMD     |Command Id                                        |enum    |0-5 - Command ID {value}                                              |
 
 
+##### RORG 0xD2 - FUNC 0x05 - TYPE 0x01 - Type 0x01
+
+###### command: 1
+|shortcut|description                                       |type    |values                                                                |
+|--------|--------------------------------------------------|--------|----                                                                  |
+|POS     |Vertical position                                 |enum    |0-100 - Output position {value}%                                      |
+|        |                                                  |        |127 - Do not change                                                   |
+|ANG     |Rotation angle                                    |enum    |0-100 - Output angle {value}%                                         |
+|        |                                                  |        |127 - Do not change                                                   |
+|REPO    |Repositioning                                     |enum    |0 - Go directly to POS/ANG                                            |
+|        |                                                  |        |1 - Go up (0%), then to POS/ANG                                       |
+|        |                                                  |        |2 - Go down (100%), then to POS/ANG                                   |
+|        |                                                  |        |3 - Reserved                                                          |
+|LOCK    |Locking modes                                     |enum    |0 - Do not change                                                     |
+|        |                                                  |        |1 - Set blockage mode                                                 |
+|        |                                                  |        |2 - Set alarm mode                                                    |
+|        |                                                  |        |3 - Reserved                                                          |
+|        |                                                  |        |4 - Reserved                                                          |
+|        |                                                  |        |5 - Reserved                                                          |
+|        |                                                  |        |6 - Reserved                                                          |
+|        |                                                  |        |7 - Deblockage                                                        |
+|CHN     |Channel                                           |enum    |0 - Channel 1                                                         |
+|        |                                                  |enum    |1 - Channel 2                                                         |
+|        |                                                  |enum    |2 - Channel 3                                                         |
+|        |                                                  |enum    |3 - Channel 4                                                         |
+|CMD     |Command Id                                        |enum    |0-5 - Command ID {value}                                              |
+
+###### command: 2
+|shortcut|description                                       |type    |values                                                                |
+|--------|--------------------------------------------------|--------|----                                                                  |
+|CHN     |Channel                                           |enum    |0 - Channel 1                                                         |
+|        |                                                  |enum    |1 - Channel 2                                                         |
+|        |                                                  |enum    |2 - Channel 3                                                         |
+|        |                                                  |enum    |3 - Channel 4                                                         |
+|CMD     |Command Id                                        |enum    |0-5 - Command ID {value}                                              |
+
+###### command: 3
+|shortcut|description                                       |type    |values                                                                |
+|--------|--------------------------------------------------|--------|----                                                                  |
+|CHN     |Channel                                           |enum    |0 - Channel 1                                                         |
+|        |                                                  |enum    |1 - Channel 2                                                         |
+|        |                                                  |enum    |2 - Channel 3                                                         |
+|        |                                                  |enum    |3 - Channel 4                                                         |
+|CMD     |Command Id                                        |enum    |0-5 - Command ID {value}                                              |
+
+###### command: 4
+|shortcut|description                                       |type    |values                                                                |
+|--------|--------------------------------------------------|--------|----                                                                  |
+|POS     |Vertical position                                 |enum    |0-100 - Output position {value}%                                      |
+|        |                                                  |        |127 - Do not change                                                   |
+|ANG     |Rotation angle                                    |enum    |0-100 - Output angle {value}%                                         |
+|        |                                                  |        |127 - Do not change                                                   |
+|REPO    |Repositioning                                     |enum    |0 - Go directly to POS/ANG                                            |
+|        |                                                  |        |1 - Go up (0%), then to POS/ANG                                       |
+|        |                                                  |        |2 - Go down (100%), then to POS/ANG                                   |
+|        |                                                  |        |3 - Reserved                                                          |
+|LOCK    |Locking modes                                     |enum    |0 - Do not change                                                     |
+|        |                                                  |        |1 - Set blockage mode                                                 |
+|        |                                                  |        |2 - Set alarm mode                                                    |
+|        |                                                  |        |3 - Reserved                                                          |
+|        |                                                  |        |4 - Reserved                                                          |
+|        |                                                  |        |5 - Reserved                                                          |
+|        |                                                  |        |6 - Reserved                                                          |
+|        |                                                  |        |7 - Deblockage                                                        |
+|CHN     |Channel                                           |enum    |0 - Channel 1                                                         |
+|        |                                                  |enum    |1 - Channel 2                                                         |
+|        |                                                  |enum    |2 - Channel 3                                                         |
+|        |                                                  |enum    |3 - Channel 4                                                         |
+|CMD     |Command Id                                        |enum    |0-5 - Command ID {value}                                              |
+
 
